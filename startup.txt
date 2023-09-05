@@ -1,0 +1,18 @@
+Virtual env: 
+conda activate privateGPT_env
+
+
+To ingest new documents:
+Add new docs to source_documents folder, then run:
+python ingest.py
+
+After ingesting new docs, run:
+python privateGPT.py
+
+or 
+To hide source in response, run:
+python privateGPT.py --hide-source
+
+or
+To disable the streaming StdOut callback for LLMs, run:
+python privateGPT.py --mute-stream
